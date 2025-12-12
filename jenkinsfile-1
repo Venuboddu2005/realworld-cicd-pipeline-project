@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+
+    stages {
+
+        stage{
+           steps("build code"){
+            sh """
+                mvn clean package -DskipTests
+                """
+           }
+
+        
+        }
+    }
+}
+
