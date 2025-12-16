@@ -13,8 +13,8 @@ pipeline {
         stage("Run unit tests only") {
             steps {
                 sh """
-                
-                .\mvn test /
+
+                .\mvnw test 
             
                 
                 """
